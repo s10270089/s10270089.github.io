@@ -4,15 +4,54 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
+    display: flex;
     width: 80%;
     margin: 50px auto;
+}
+
+.sidebar {
+    width: 200px;
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar #question-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar #question-links li {
+    margin-bottom: 10px;
+}
+
+.sidebar #question-links li.completed {
+    color: green;
+    text-decoration: line-through;
+}
+
+.main-content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 h1 {
@@ -25,6 +64,37 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
     color: #4CAF50;
+}
+
+#question-list {
+    margin-bottom: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#question-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    list-style-type: none;
+}
+
+#question-links li {
+    margin: 5px;
+}
+
+#question-links li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#question-links li a:hover {
+    background-color: #45a049;
 }
 
 .question {

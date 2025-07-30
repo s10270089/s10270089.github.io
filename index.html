@@ -9,17 +9,24 @@
 <body>
 
 <div class="container">
-    <h1>Cloud Concepts Quiz</h1>
-
-    <!-- Progress Tracker -->
-    <div id="progress-container">
-        <p id="progress-text">Question 1 of 65</p>
+    <div class="sidebar">
+        <h2>Questions</h2>
+        <div id="question-links"></div>
     </div>
 
-    <div id="quiz-container">
-        <div id="question-container"></div>
-        <button id="check-btn" class="submit-btn" onclick="checkAnswer()">Check Answer</button>
-        <button id="next-btn" class="submit-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+    <div class="main-content">
+        <h1>Cloud Concepts Quiz</h1>
+
+        <!-- Progress Tracker -->
+        <div id="progress-container">
+            <p id="progress-text">Question 1 of 65</p>
+        </div>
+
+        <div id="quiz-container">
+            <div id="question-container"></div>
+            <button id="check-btn" class="submit-btn" onclick="checkAnswer()">Check Answer</button>
+            <button id="next-btn" class="submit-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+        </div>
     </div>
 </div>
 

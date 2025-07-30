@@ -609,6 +609,400 @@ const questions = [
             { text: "Amazon CloudFront", correct: false }
         ],
         explanation: "Amazon ECS (Elastic Container Service) is used to run and scale containerized applications, simplifying the management of Docker containers on AWS."
+    },
+    {
+        question: "A startup is launching a new e-commerce website. They expect rapid growth, but they're unsure about traffic spikes. Which cloud architecture would you recommend for the website?",
+        options: [
+            { text: "On-premises infrastructure", correct: false },
+            { text: "Hybrid Cloud architecture", correct: true },
+            { text: "Public Cloud only", correct: false },
+            { text: "Private Cloud only", correct: false }
+        ],
+        explanation: "A Hybrid Cloud architecture would allow the startup to use a public cloud for flexibility and scalability, while keeping critical data on-premises or in a private cloud."
+    },
+    // Scenario-based question 2
+    {
+        question: "A company wants to reduce the upfront cost of infrastructure but needs to store sensitive data securely. Which AWS service can meet their needs?",
+        options: [
+            { text: "Amazon S3", correct: false },
+            { text: "Amazon EC2", correct: false },
+            { text: "AWS Hybrid Cloud", correct: true },
+            { text: "AWS Lambda", correct: false }
+        ],
+        explanation: "AWS Hybrid Cloud allows businesses to manage sensitive data on-premises while leveraging AWS for scalable compute resources and storage."
+    },
+    // Scenario-based question 3
+    {
+        question: "A multinational corporation requires multiple data centers for disaster recovery. Which AWS service would be ideal for setting up a multi-region, multi-availability zone architecture?",
+        options: [
+            { text: "Amazon EC2", correct: false },
+            { text: "AWS CloudFormation", correct: false },
+            { text: "AWS VPC", correct: true },
+            { text: "AWS Lambda", correct: false }
+        ],
+        explanation: "AWS VPC allows you to deploy resources across multiple availability zones and regions, enabling high availability and disaster recovery configurations."
+    },
+    // Scenario-based question 4
+    {
+        question: "A company wants to move its database to the cloud but needs minimal downtime during the transition. Which AWS service is best suited for the migration?",
+        options: [
+            { text: "AWS DataSync", correct: false },
+            { text: "AWS Database Migration Service (DMS)", correct: true },
+            { text: "AWS Elastic Beanstalk", correct: false },
+            { text: "AWS CloudFormation", correct: false }
+        ],
+        explanation: "AWS Database Migration Service (DMS) helps migrate databases to AWS with minimal downtime, ensuring business continuity during the migration."
+    },
+    // AWS Hybrid Cloud Architecture
+    {
+        question: "In an AWS Hybrid Cloud architecture, which of the following components allows on-premises systems to connect securely to AWS resources?",
+        options: [
+            { text: "AWS Direct Connect", correct: true },
+            { text: "Amazon Route 53", correct: false },
+            { text: "AWS CloudFormation", correct: false },
+            { text: "AWS VPC Peering", correct: false }
+        ],
+        explanation: "AWS Direct Connect establishes a dedicated network connection between your on-premises infrastructure and AWS, ensuring secure and high-performance communication."
+    },
+    {
+        question: "Which AWS service is used in a Hybrid Cloud environment to manage the deployment of applications across on-premises and AWS resources?",
+        options: [
+            { text: "Amazon EC2", correct: false },
+            { text: "AWS Elastic Beanstalk", correct: true },
+            { text: "AWS S3", correct: false },
+            { text: "AWS Lambda", correct: false }
+        ],
+        explanation: "AWS Elastic Beanstalk allows for easy deployment and management of applications in both on-premises and AWS environments, making it ideal for hybrid cloud setups."
+    },
+    {
+        question: "What is the purpose of AWS Storage Gateway in a Hybrid Cloud Architecture?",
+        options: [
+            { text: "To provide a virtual storage service", correct: false },
+            { text: "To integrate on-premises storage with cloud storage", correct: true },
+            { text: "To create backup copies of S3 data", correct: false },
+            { text: "To host web applications", correct: false }
+        ],
+        explanation: "AWS Storage Gateway enables seamless integration between on-premises storage environments and AWS storage services, making it suitable for hybrid cloud storage solutions."
+    },
+    {
+        question: "Which component in AWS Hybrid Cloud Architecture allows you to extend your VPC to on-premises resources securely?",
+        options: [
+            { text: "VPN Gateway", correct: true },
+            { text: "Elastic Load Balancer", correct: false },
+            { text: "AWS Direct Connect", correct: true },
+            { text: "AWS WAF", correct: false }
+        ],
+        explanation: "Both VPN Gateway and AWS Direct Connect allow you to extend your AWS VPC securely to on-premises networks, providing flexibility in a hybrid cloud environment."
+    },
+    {
+        question: "Which AWS service in a Hybrid Cloud setup allows you to run virtual machines seamlessly on-premises and in the cloud?",
+        options: [
+            { text: "AWS EC2", correct: false },
+            { text: "AWS VMware Cloud on AWS", correct: true },
+            { text: "AWS Lambda", correct: false },
+            { text: "Amazon S3", correct: false }
+        ],
+        explanation: "AWS VMware Cloud on AWS allows businesses to run VMware-based workloads both on-premises and in AWS, facilitating hybrid cloud deployments."
+    },
+    {
+        question: "What does AWS CloudEndure Migration help companies with in a Hybrid Cloud Architecture?",
+        options: [
+            { text: "Automating disaster recovery across regions", correct: false },
+            { text: "Enabling the migration of workloads to AWS", correct: true },
+            { text: "Controlling cost optimization for hybrid environments", correct: false },
+            { text: "Managing hybrid cloud storage solutions", correct: false }
+        ],
+        explanation: "AWS CloudEndure Migration provides automated and fast migration of workloads to AWS with minimal downtime, making it a key tool for companies adopting hybrid cloud environments."
+    },
+    {
+        question: "Which AWS service helps monitor and manage resources across both on-premises and AWS environments in a hybrid cloud setup?",
+        options: [
+            { text: "Amazon CloudWatch", correct: true },
+            { text: "Amazon EC2", correct: false },
+            { text: "AWS Lambda", correct: false },
+            { text: "Amazon S3", correct: false }
+        ],
+        explanation: "Amazon CloudWatch enables monitoring of AWS resources and on-premises servers, providing insights into resource utilization and performance in a hybrid cloud environment."
+    },
+    {
+        question: "Which of the following best describes AWS Outposts in a hybrid cloud architecture?",
+        options: [
+            { text: "Fully managed storage solution", correct: false },
+            { text: "A hybrid solution where AWS infrastructure is placed in your on-premises data center", correct: true },
+            { text: "A managed service for running containers", correct: false },
+            { text: "A backup and disaster recovery solution", correct: false }
+        ],
+        explanation: "AWS Outposts is a fully managed hybrid solution that brings AWS infrastructure into your on-premises data center, allowing seamless integration between on-premises and cloud resources."
+    },
+    {
+        question: "Which service in AWS Hybrid Cloud architecture ensures seamless application connectivity between on-premises and cloud environments?",
+        options: [
+            { text: "AWS VPC Peering", correct: false },
+            { text: "AWS Direct Connect", correct: true },
+            { text: "AWS Route 53", correct: false },
+            { text: "Amazon CloudWatch", correct: false }
+        ],
+        explanation: "AWS Direct Connect provides a dedicated network connection between on-premises environments and AWS, ensuring seamless connectivity and low-latency performance."
+    },
+    {
+        question: "A company wants to establish a hybrid architecture where some of their applications run on-premises and others in AWS. Which AWS service should they use to create a unified network for both environments?",
+        options: [
+            { text: "Amazon VPC", correct: true },
+            { text: "AWS Lambda", correct: false },
+            { text: "Amazon CloudFront", correct: false },
+            { text: "AWS WAF", correct: false }
+        ],
+        explanation: "Amazon VPC (Virtual Private Cloud) is the service that allows you to create a unified, isolated network for your resources, both on-premises and in the AWS cloud, in a hybrid setup."
+    },
+    {
+        question: "In a hybrid cloud setup, which AWS service allows seamless integration between on-premises VMware environments and AWS infrastructure?",
+        options: [
+            { text: "AWS Outposts", correct: true },
+            { text: "Amazon VPC", correct: false },
+            { text: "AWS Direct Connect", correct: false },
+            { text: "AWS Lambda", correct: false }
+        ],
+        explanation: "AWS Outposts extends your on-premises VMware environment into AWS, allowing seamless integration between your on-premises and cloud infrastructure in a hybrid cloud setup."
+    },
+    {
+        question: "Which AWS service provides a low-cost, highly durable cloud storage for archiving and backup that can be integrated into a hybrid cloud architecture?",
+        options: [
+            { text: "Amazon EBS", correct: false },
+            { text: "Amazon Glacier", correct: true },
+            { text: "AWS Storage Gateway", correct: false },
+            { text: "Amazon S3", correct: false }
+        ],
+        explanation: "Amazon Glacier is designed for long-term archival storage and backup, providing a low-cost, highly durable solution that fits well in a hybrid cloud architecture."
+    },
+    {
+        question: "Which AWS service allows you to easily deploy, manage, and scale applications on both on-premises and AWS environments in a hybrid architecture?",
+        options: [
+            { text: "AWS Lambda", correct: false },
+            { text: "AWS Elastic Beanstalk", correct: true },
+            { text: "AWS CloudFormation", correct: false },
+            { text: "AWS EC2", correct: false }
+        ],
+        explanation: "AWS Elastic Beanstalk is a Platform-as-a-Service (PaaS) that allows easy deployment and scaling of applications both on-premises and in the cloud in hybrid cloud setups."
+    },
+    {
+        question: "Which AWS service is specifically designed to provide a secure and high-performance dedicated network connection between your on-premises data center and AWS?",
+        options: [
+            { text: "Amazon VPC Peering", correct: false },
+            { text: "AWS Direct Connect", correct: true },
+            { text: "AWS VPN", correct: false },
+            { text: "AWS CloudTrail", correct: false }
+        ],
+        explanation: "AWS Direct Connect provides a dedicated network connection from your on-premises data center to AWS, offering more consistent and reliable performance compared to standard internet connections."
+    },
+    {
+        question: "What is the primary function of AWS Hybrid Cloud solutions like AWS Storage Gateway?",
+        options: [
+            { text: "Automate security policies in hybrid environments", correct: false },
+            { text: "Provide seamless storage integration between on-premises and cloud storage", correct: true },
+            { text: "Enable serverless computing", correct: false },
+            { text: "Allow real-time data analytics", correct: false }
+        ],
+        explanation: "AWS Storage Gateway integrates on-premises storage with cloud storage, enabling seamless data transfer between your on-premises environment and AWS storage services, ideal for hybrid cloud architectures."
+    },
+    {
+        question: "In a hybrid cloud environment, which AWS service provides the ability to automate provisioning of on-premises resources alongside AWS infrastructure?",
+        options: [
+            { text: "AWS CloudFormation", correct: true },
+            { text: "Amazon EC2", correct: false },
+            { text: "AWS Lambda", correct: false },
+            { text: "Amazon S3", correct: false }
+        ],
+        explanation: "AWS CloudFormation allows for the automation of resource provisioning across on-premises and AWS environments, providing a consistent approach to infrastructure management in hybrid cloud setups."
+    },
+    {
+        question: "Which AWS service can be used to connect an on-premises data center to an Amazon VPC using a private connection, enabling hybrid cloud architectures?",
+        options: [
+            { text: "AWS VPN", correct: false },
+            { text: "AWS Direct Connect", correct: true },
+            { text: "Amazon EC2", correct: false },
+            { text: "Amazon VPC Peering", correct: false }
+        ],
+        explanation: "AWS Direct Connect allows you to establish a private, dedicated network connection from your on-premises data center to an Amazon VPC, improving performance and security in hybrid cloud setups."
+    },
+    {
+        question: "Which AWS service can be used to seamlessly extend your on-premises infrastructure to the AWS cloud, allowing you to run hybrid applications?",
+        options: [
+            { text: "Amazon CloudWatch", correct: false },
+            { text: "AWS Outposts", correct: true },
+            { text: "Amazon S3", correct: false },
+            { text: "AWS IAM", correct: false }
+        ],
+        explanation: "AWS Outposts extends AWS infrastructure to on-premises environments, allowing companies to run hybrid applications that require low latency, local processing, and tight integration with the cloud."
+    },
+    {
+        question: "Which service helps ensure that your hybrid cloud architecture is cost-optimized by monitoring and controlling AWS usage and expenses?",
+        options: [
+            { text: "AWS Cost Explorer", correct: true },
+            { text: "AWS CloudFormation", correct: false },
+            { text: "AWS Trusted Advisor", correct: false },
+            { text: "AWS CloudTrail", correct: false }
+        ],
+        explanation: "AWS Cost Explorer provides detailed insights into AWS costs and usage, helping you identify areas where you can optimize costs in both AWS and hybrid cloud environments."
+    },
+    {
+        question: "A company is considering a hybrid cloud solution. They need the ability to seamlessly transfer large volumes of data between their on-premises environment and AWS. Which AWS service is most appropriate for this use case?",
+        options: [
+            { text: "AWS Direct Connect", correct: true },
+            { text: "Amazon S3", correct: false },
+            { text: "AWS Lambda", correct: false },
+            { text: "Amazon EC2", correct: false }
+        ],
+        explanation: "AWS Direct Connect is ideal for transferring large volumes of data between on-premises data centers and AWS, offering a dedicated network connection that ensures high throughput and low latency."
+    },
+    {
+        question: "Which service allows you to automate the migration of your on-premises VMware-based workloads to AWS, helping with hybrid cloud adoption?",
+        options: [
+            { text: "AWS Snowball", correct: false },
+            { text: "VMware Cloud on AWS", correct: true },
+            { text: "AWS CloudFormation", correct: false },
+            { text: "AWS Storage Gateway", correct: false }
+        ],
+        explanation: "VMware Cloud on AWS provides a seamless hybrid cloud experience by allowing VMware-based workloads to run natively on AWS, simplifying migration and integration of on-premises VMware environments with the cloud."
+    },
+    {
+        question: "Which of the following AWS services enables you to seamlessly integrate on-premises storage with AWS storage solutions in a hybrid environment?",
+        options: [
+            { text: "AWS Storage Gateway", correct: true },
+            { text: "Amazon S3", correct: false },
+            { text: "AWS CloudTrail", correct: false },
+            { text: "AWS Lambda", correct: false }
+        ],
+        explanation: "AWS Storage Gateway helps bridge on-premises storage systems with AWS cloud storage, allowing for data migration, backup, and cloud integration in hybrid cloud architectures."
+    },
+    {
+        question: "A company has an on-premises data center and wants to extend its computing capacity to AWS only when there are traffic spikes. Which architecture would be suitable for this?",
+        options: [
+            { text: "Public Cloud only", correct: false },
+            { text: "Private Cloud only", correct: false },
+            { text: "Hybrid Cloud", correct: true },
+            { text: "On-premises infrastructure", correct: false }
+        ],
+        explanation: "A Hybrid Cloud architecture allows the company to extend their on-premises capacity to the cloud when necessary, ensuring flexibility and cost efficiency during traffic spikes."
+    },
+    {
+        question: "Which AWS service provides a hybrid approach to running databases by enabling you to run databases on AWS while maintaining an on-premises system?",
+        options: [
+            { text: "Amazon RDS", correct: false },
+            { text: "AWS Database Migration Service", correct: true },
+            { text: "Amazon DynamoDB", correct: false },
+            { text: "Amazon Redshift", correct: false }
+        ],
+        explanation: "AWS Database Migration Service (DMS) facilitates hybrid cloud database deployments by enabling the migration of on-premises databases to AWS with minimal downtime."
+    },
+    {
+        question: "Which of the following AWS services enables a secure, dedicated connection between on-premises data centers and AWS resources in a hybrid cloud setup?",
+        options: [
+            { text: "AWS Direct Connect", correct: true },
+            { text: "AWS CloudFormation", correct: false },
+            { text: "Amazon Route 53", correct: false },
+            { text: "Amazon VPC Peering", correct: false }
+        ],
+        explanation: "AWS Direct Connect establishes a private, high-performance network connection between your on-premises data center and AWS, enabling seamless hybrid cloud integration."
+    },
+    {
+        question: "Which AWS service can be used to migrate large volumes of data to AWS, making it easier to move data in a hybrid environment?",
+        options: [
+            { text: "AWS Snowball", correct: true },
+            { text: "Amazon S3", correct: false },
+            { text: "AWS Lambda", correct: false },
+            { text: "AWS CloudTrail", correct: false }
+        ],
+        explanation: "AWS Snowball is a data transfer service that helps you move large amounts of data into AWS securely, which is beneficial in hybrid cloud environments for data migration."
+    },
+    {
+        question: "In a hybrid cloud environment, which AWS service helps ensure compliance and security monitoring by continuously assessing the configuration of AWS resources?",
+        options: [
+            { text: "AWS Config", correct: true },
+            { text: "Amazon EC2", correct: false },
+            { text: "AWS CloudTrail", correct: false },
+            { text: "AWS Shield", correct: false }
+        ],
+        explanation: "AWS Config continuously monitors and records the configuration of AWS resources, helping you maintain compliance and security across hybrid cloud architectures."
+    },
+    {
+        question: "Which AWS service would be best for a hybrid cloud architecture where sensitive data must remain on-premises, but compute resources can scale to AWS?",
+        options: [
+            { text: "Amazon RDS", correct: false },
+            { text: "AWS Outposts", correct: true },
+            { text: "Amazon EC2", correct: false },
+            { text: "Amazon S3", correct: false }
+        ],
+        explanation: "AWS Outposts provides a fully managed hybrid solution that extends AWS infrastructure to on-premises locations, enabling businesses to run sensitive workloads on-premises while scaling to AWS when needed."
+    },
+    {
+        question: "Which of the following services helps organizations securely manage and monitor access to AWS resources in hybrid cloud setups?",
+        options: [
+            { text: "AWS IAM", correct: true },
+            { text: "AWS Direct Connect", correct: false },
+            { text: "AWS Shield", correct: false },
+            { text: "Amazon EC2", correct: false }
+        ],
+        explanation: "AWS Identity and Access Management (IAM) is used to securely manage access to AWS resources by defining roles and permissions for users, which is essential for both cloud and hybrid cloud environments."
+    },
+    {
+        question: "Which AWS service can help a company implement a secure connection between their on-premises environment and AWS using a VPN?",
+        options: [
+            { text: "Amazon S3", correct: false },
+            { text: "AWS VPN", correct: true },
+            { text: "AWS WAF", correct: false },
+            { text: "Amazon CloudWatch", correct: false }
+        ],
+        explanation: "AWS VPN allows you to securely connect your on-premises environment to AWS using an encrypted VPN connection, facilitating hybrid cloud deployments."
+    },
+    {
+        question: "Which service enables secure and low-latency data transfer between on-premises applications and AWS storage in a hybrid cloud scenario?",
+        options: [
+            { text: "AWS Storage Gateway", correct: true },
+            { text: "Amazon S3", correct: false },
+            { text: "AWS Lambda", correct: false },
+            { text: "AWS Direct Connect", correct: false }
+        ],
+        explanation: "AWS Storage Gateway provides seamless integration between on-premises applications and AWS storage services, allowing hybrid cloud setups to easily move data between on-premises and the cloud."
+    },
+     {
+        question: "Which AWS service helps you migrate your VMware workloads to AWS in a hybrid cloud setup?",
+        options: [
+            { text: "AWS Storage Gateway", correct: false },
+            { text: "VMware Cloud on AWS", correct: true },
+            { text: "Amazon EC2", correct: false },
+            { text: "AWS Direct Connect", correct: false }
+        ],
+        explanation: "VMware Cloud on AWS provides a fully managed VMware environment in the cloud, helping businesses extend their on-premises VMware workloads to AWS in a hybrid setup."
+    },
+    {
+        question: "A company has a large database on-premises that they need to migrate to AWS. Which service would help minimize downtime during migration?",
+        options: [
+            { text: "AWS Database Migration Service (DMS)", correct: true },
+            { text: "AWS CloudFormation", correct: false },
+            { text: "Amazon S3", correct: false },
+            { text: "AWS Elastic Beanstalk", correct: false }
+        ],
+        explanation: "AWS Database Migration Service (DMS) helps you migrate databases to AWS with minimal downtime, making it ideal for hybrid cloud migrations that require high availability."
+    },
+    {
+        question: "Which of the following AWS services allows for seamless integration between on-premises Active Directory and AWS resources?",
+        options: [
+            { text: "Amazon EC2", correct: false },
+            { text: "AWS Directory Service", correct: true },
+            { text: "Amazon RDS", correct: false },
+            { text: "AWS IAM", correct: false }
+        ],
+        explanation: "AWS Directory Service allows you to integrate your on-premises Active Directory with AWS resources, enabling a hybrid identity setup and seamless user management."
+    },
+    {
+        question: "In a Hybrid Cloud architecture, which AWS service enables automated backups and disaster recovery for on-premises systems and AWS resources?",
+        options: [
+            { text: "Amazon Glacier", correct: false },
+            { text: "AWS Backup", correct: true },
+            { text: "AWS Snowball", correct: false },
+            { text: "AWS WAF", correct: false }
+        ],
+        explanation: "AWS Backup provides centralized backup management across AWS services and on-premises environments, enabling seamless disaster recovery in a hybrid cloud architecture."
     }
 ];
 let currentQuestionIndex = 0;
@@ -659,6 +1053,7 @@ function checkAnswer() {
         explanation.innerHTML = `<p class="correct">Correct! ${question.explanation}</p>`;
         document.getElementById("next-btn").style.display = "inline";
         document.getElementById("check-btn").style.display = "none";
+        markQuestionAsCompleted(currentQuestionIndex); // Mark as completed
     } else {
         explanation.innerHTML = `<p class="incorrect">Incorrect. The correct answers are: ${correctAnswers.join(', ')}. ${question.explanation}</p>`;
         document.getElementById("check-btn").disabled = false;
@@ -683,5 +1078,34 @@ function updateProgress() {
     progressText.innerText = `Question ${currentQuestionIndex + 1} of ${questions.length} - ${remainingQuestions} remaining`;
 }
 
+// Function to mark a question as completed in the question list
+function markQuestionAsCompleted(index) {
+    const questionLinks = document.getElementById('question-links');
+    const questionLink = questionLinks.querySelector(`a[data-index="${index}"]`);
+    questionLink.classList.add('completed'); // Add 'completed' class for visual feedback
+}
+
+// Function to create the "Skip to question" list
+function createQuestionList() {
+    const questionLinks = document.getElementById('question-links');
+
+    questions.forEach((question, index) => {
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = "#";
+        link.textContent = `${index + 1}`;
+        link.setAttribute('data-index', index); // Store the index to track questions
+        link.onclick = function() {
+            currentQuestionIndex = index;
+            loadQuestion();
+        };
+        listItem.appendChild(link);
+        questionLinks.appendChild(listItem);
+    });
+}
+
 // Initial load of the first question
 loadQuestion();
+
+// Create the question list
+createQuestionList();
